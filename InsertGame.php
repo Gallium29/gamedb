@@ -8,8 +8,8 @@ $release_date = $_POST["release_date"];
 $developer_id = $_POST["developer_id"];
 
 $servername = "localhost";
-$username = "root";
-$password = "zhengjia";
+$username = ""; //update
+$password = ""; // update
 $dbname = "gamedb";
 
 /* connect to database */

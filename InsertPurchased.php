@@ -6,8 +6,8 @@ $purchase_date = $_POST["purchase_date"];
 $rating = $_POST["rating"];
 
 $servername = "localhost";
-$username = "root";
-$password = "zhengjia";
+$username = ""; //update
+$password = ""; // update
 $dbname = "gamedb";
 
 /* connect to database */

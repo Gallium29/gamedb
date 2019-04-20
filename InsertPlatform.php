@@ -4,8 +4,8 @@ $platform_id = $_POST["platform_id"];
 $platform_name = $_POST["platform_name"];
 
 $servername = "localhost";
-$username = "root";
-$password = "zhengjia";
+$username = ""; //update
+$password = ""; // update
 $dbname = "gamedb";
 
 /* connect to database */

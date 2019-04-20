@@ -1,8 +1,8 @@
 <?php
 
 $servername = "localhost";
-$username = "root";
-$password = "zhengjia";
+$username = ""; //update
+$password = ""; // update
 $dbname = "gamedb";
 
 $conn = new mysqli($servername, $username, $password, $dbname);

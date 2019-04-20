@@ -6,8 +6,8 @@ $gender = $_POST["gender"];
 $job = $_POST["job"];
 
 $servername = "localhost";
-$username = "root";
-$password = "zhengjia";
+$username = ""; //update
+$password = ""; // update
 $dbname = "gamedb";
 
 /* connect to database */

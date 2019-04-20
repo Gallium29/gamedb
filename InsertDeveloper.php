@@ -6,8 +6,8 @@ $location = $_POST["location"];
 $average_game_rating = $_POST["average_game_rating"];
 
 $servername = "localhost";
-$username = "root";
-$password = "zhengjia";
+$username = ""; //update
+$password = ""; // update
 $dbname = "gamedb";
 
 /* connect to database */
