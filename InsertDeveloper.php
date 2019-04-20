@@ -13,21 +13,26 @@ $dbname = "gamedb";
 /* connect to database */
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
-    echo "Connection faild.";
+    echo "Connection failed.";
     die("Connection failed: " . $conn->connect_error);
 } 
 
-/* insert */
+/* insert function */
+
+/* developer */
 $sql = "INSERT INTO Developer
 		VALUES ('$developer_id', '$developer_name', '$location', '$average_game_rating')";
 if ($conn->query($sql) === TRUE) {
-    echo "Insertion succeeded.\n";
+    echo "Insertion success.\n";
 }
 else {
     echo "Insertion Error: " . $conn->error;
 }
 
+
 /* res after insertion */
+
+/* developer */
 $sql = "SELECT * 
 		FROM Developer";
 $res = $conn->query($sql);
