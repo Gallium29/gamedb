@@ -4,8 +4,8 @@ $game_id = $_POST["game_id"];
 $platform_id = $_POST["platform_id"];
 
 $servername = "localhost";
-$username = "root";
-$password = "zhengjia";
+$username = ""; //update
+$password = ""; // update
 $dbname = "gamedb";
 
 /* connect to database */
@@ -18,7 +18,7 @@ if ($conn->connect_error) {
 /* insert function */
 
 /* belongs to */
-$sql = "INSERT INTO Game
+$sql = "INSERT INTO BelongsTo
 		VALUES ('$game_id', '$platform_id')";
 if ($conn->query($sql) === TRUE) {
     echo "Insertion success.\n";
