@@ -1,55 +1,56 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Game Database</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
 <body>
 
-<form action="CreateTables.php" method="post">
-<input type="submit" value="create tables">
-</form>
+<div class="jumbotron text-center">
+    <h1>Game Database</h1>
+    <p>An interactive game database designed for CS 6750, Spring 2019!</p>
+</div>
 
-<form action="InsertUser.php" method="post">
-    user_id: <input type="number" name="user_id"><br>
-    age: <input type="number" name="age"><br>
-    gender: <input type="text" name="gender"><br>
-    job: <input type="text" name="job"><br>
-    <input type="submit">
-</form>
+<div class="container-fluid bg-3 text-center">
+    <h3>Create Tables</h3>
+    <form action="CreateTables.php" method="post">
+        <input type="submit" value="Create">
+    </form>
+</div><br>
 
-<form action="InsertDeveloper.php" method="post">
-    developer_id: <input type="number" name="developer_id"><br>
-    developer_name: <input type="text" name="developer_name"><br>
-    location: <input type="text" name="location"><br>
-    average_game_rating: <input type="number" name="average_game_rating"><br>
-    <input type="submit">
-</form>
+<div class="container">
+    <div class="row">
 
-<form action="InsertGame.php" method="post">
-    game_id: <input type="number" name="game_id"><br>
-    game_name: <input type="text" name="game_name"><br>
-    genre: <input type="text" name="genre"><br>
-    rating: <input type="number" name="rating"><br>
-    release_date:<input type="date" name="release_date"><br>
-    developer_id: <input type="number" name="developer_id"><br>
-    <input type="submit">
-</form>
+        <div class="col-sm-3">
+            <h3>Insert Values</h3>
+            <p>Click to populate database with values</p>
+            <a href="Insert.html"><button type="button" class="btn btn-primary">Insert Values</button></a>
+        </div>
 
-<form action="InsertPlatform.php" method="post">
-    platform_id: <input type="number" name="platform_id"><br>
-    platform_name: <input type="text" name="platform_name"><br>
-    <input type="submit">
-</form>
+        <div class="col-sm-3">
+            <h3>Delete Values</h3>
+            <p>Click to delete database with values</p>
+            <a href="Delete.html"><button type="button" class="btn btn-primary">Delete Values</button></a>
+        </div>
 
-<form action="InsertPurchased.php" method="post">
-    user_id: <input type="number" name="user_id"><br>
-    game_id: <input type="number" name="game_id"><br>
-    purchase_date:<input type="date" name="purchase_date"><br>
-    rating: <input type="number" name="rating"><br>
-    <input type="submit">
-</form>
+        <div class="col-sm-3">
+            <h3>Update Values</h3>
+            <p>Click to update database values</p>
+            <a href="Insert.html"><button type="button" class="btn btn-primary">Update Values</button></a>
+        </div>
 
-<form action="InsertBelongsTo.php" method="post">
-    game_id: <input type="number" name="game_id"><br>
-    platform_id: <input type="number" name="platform_id"><br>
-    <input type="submit">
-</form>
+        <div class="col-sm-3">
+            <h3>Special Queries</h3>
+            <p>Click here to perform special queries</p>
+            <a href="Insert.html"><button type="button" class="btn btn-primary">Perform Queries</button></a>
+        </div>
+
+    </div>
+</div>
 
 </body>
 </html>
